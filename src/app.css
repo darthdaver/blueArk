@@ -1,0 +1,70 @@
+html, body, main-application {
+  height: 100%;
+  display: block;
+}
+
+main-application > div, main-application > div > span {
+  height: 100%;
+}
+
+c-log-in-external-view-container {
+    height: 100%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.logo {
+  background-image: url(../images/splash.png);
+  height: 25%;
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 5%;
+  background-origin: content-box;
+}
+
+.login-container {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(167, 201, 63, 0.6);
+  padding: 5%;
+}
+
+input{
+   text-align:center;
+}
+
+.formcustom {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mybtn {
+  flex-grow: 1;
+  margin: 2%;
+}
+
+.takepic {
+  width: 100%;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+
+.takepic > a {
+  width: 100%;
+}
+
+.margined {
+  margin: 5%;
+}

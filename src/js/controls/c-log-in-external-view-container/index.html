@@ -1,5 +1,10 @@
 <span>
+    <div class="logo"></div>
     <!-- Xor Log In -->
+    <div class="margined">log in to compare with your household appliances<br></div>
     <c-xor-log-in-view-container params="context: context"></c-xor-log-in-view-container>
-    <a class="waves-effect waves-light btn green col s12" data-bind="click: trigger.bind($data,'take-picture-not-logged-event')">Take picture</a>
+    <div class="margined">or directly</div>
+    <div class="takepic login-container">
+        <a class="waves-effect waves-light btn green col s12" data-bind="click: trigger.bind($data,'take-picture-not-logged-event')">Take picture</a>
+    </div>
 </span>

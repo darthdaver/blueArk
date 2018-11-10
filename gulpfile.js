@@ -68,11 +68,16 @@ gulp.task('css', function () {
                 .pipe(rename({suffix: '.min'}))
                 .pipe(gulp.dest('./www/css')),
         gulp.src('./node_modules/materialize-css/dist/fonts/roboto/*').pipe(gulp.dest('./www/fonts/roboto')),
-        gulp.src('./node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.*').pipe(gulp.dest('./www/css/fonts'))
+        gulp.src('./node_modules/material-design-icons-iconfont/dist/fonts/MaterialIcons-Regular.*').pipe(gulp.dest('./www/css/fonts')),
+        gulp.src('./src/app.css').pipe(gulp.dest('./www/css'))
     );
 });
 
-gulp.task('build', ['html', 'css', 'js', 'vendor']);
+gulp.task('images', function () {
+    return gulp.src('./src/images/*').pipe(gulp.dest('./www/images'));
+});
+
+gulp.task('build', ['html', 'css', 'images', 'js', 'vendor']);
 
 gulp.task('default', ['clean'], function () {
     return gulp.start('build');
