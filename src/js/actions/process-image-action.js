@@ -13,10 +13,11 @@ function Action() { // add "options" parameters if needed
 Action.prototype.run = function (parameters, solve) { // add "onCancel" parameters if needed
     // Parameters:
     // parameters['image']
+
     navigator.camera.getPicture(onSuccess, onFail, {destinationType: Camera.DestinationType.DATA_URL});
 
     function onSuccess(data) {
-
+        localStorage.setItem('model',data.model);
         $.ajax({
             url: 'http://192.168.8.104:4000/',
             type: 'post',

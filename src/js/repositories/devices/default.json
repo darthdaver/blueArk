@@ -1,6 +1,6 @@
 [
   {"type": "Refrigerator", "id": "RCSA270K20W", "consumptions": "257", "refrigerator": "175", "noise": "40", "freezer": "87", "brand": "beko"},
-  {"type": "Wine Refrigerator", "id": "1662 WINEMASTER TOUCH 66", "consumptions": "153", "refrigerator": "66", "noise": "41", "brand": "Braukmann"},
+  {"type": "Wine Refrigerator", "id": "0662 WINEMASTER TOUCH 66", "consumptions": "153", "refrigerator": "66", "noise": "41", "brand": "Braukmann"},
   {"type": "Dishwasher", "dry": "A", "kg": "13", "id": "FH6F9BDS2", "consumptions": "230", "noise": "42", "water": "2380", "brand": "LG"},
-  {"type": "Washing Machine", "kg": "8", "centrifuge": "A", "id": "J 5000 WPS Supertronic", "noise-wash": "48", "consumptions": "282", "noise-dry": "73", "water": "11880", "brand": "Miele"}
+  {"type": "Washing Machine", "kg": "8", "centrifuge": "A", "id": "J S000 WPS Supertronic", "noise-wash": "48", "consumptions": "282", "noise-dry": "73", "water": "11880", "brand": "Miele"}
 ]

@@ -15,6 +15,7 @@ function Repository(options) {
     this.db = Promise.promisifyAll(new DataStore({
         filename: 'devices',
         inMemoryOnly: true
+        //autoload: true
     }));
     this.db.insert(require('./default'));
     // TODO: remove this END
@@ -31,6 +32,13 @@ Repository.prototype.find = function (fields, project) {
     // TODO: implement the accessor to the datasource which returns a promise
     // TODO: remove this BEGIN
     return this.db.findAsync(fields, project);
+    // TODO: remove this END
+};
+
+Repository.prototype.update = function (id, fields) {
+    // TODO: implement the accessor to the datasource which returns a promise
+    // TODO: remove this BEGIN
+    return this.db.updateAsync({ id: id }, { $set: fields });
     // TODO: remove this END
 };
 

@@ -106,3 +106,8 @@ text-align: center;
 .padder > a {
   width: 100%;
 }
+
+c-cost-view-container {
+  display: block;
+    padding: 5%;
+}
