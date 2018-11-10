@@ -8,10 +8,14 @@
     </div>
     <div class="card-content">
         <div data-bind="if: item">
+        <!-- ko if: item()['brand'] != '' -->
         <strong>brand</strong>
         <span data-bind="text: item()['brand']" style="white-space: pre-wrap;"></span><br>
+        <!-- /ko -->
+        <!-- ko if: item()['centrifuge'] != ''-->
         <strong>centrifuge</strong>
         <span data-bind="text: item()['centrifuge']" style="white-space: pre-wrap;"></span><br>
+        <!-- /ko -->
         <strong>consumptions</strong>
         <span data-bind="text: item()['consumptions']" style="white-space: pre-wrap;"></span><br>
         <strong>cost per annum</strong>

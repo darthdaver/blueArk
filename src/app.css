@@ -68,3 +68,41 @@ input{
 .margined {
   margin: 5%;
 }
+
+c-compute-view-container {
+  display: block;
+  padding: 5%;
+}
+
+.customheader {
+  border-radius: 10px;
+  border: 0px !important;
+  padding: 2%;
+  text-align: center;
+text-transform: capitalize;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+c-compute-form {
+  display: block;
+  margin-top: 5%;
+}
+
+.upperded {
+  text-transform: uppercase;
+  font-size: small;
+font-weight: 400;
+text-align: center;
+}
+
+.padder {
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.padder > a {
+  width: 100%;
+}
