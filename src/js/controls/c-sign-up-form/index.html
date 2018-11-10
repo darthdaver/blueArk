@@ -1,0 +1,49 @@
+<div class="card z-depth-1">
+    <div class="card-image">
+        <ul class="card-image collection with-header">
+            <li class="collection-header cyan">
+                <h5 class="white-text light">Sign Up Form</h5>
+            </li>
+        </ul>
+    </div>
+    <div class="card-content">
+        <div data-bind="if: fields">
+            <form>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="sign-up-form_field_0" data-bind="value: fields()['Email'], css: {invalid: errors()['Email']}" type="text" class="validate">
+                      <label for="sign-up-form_field_0" data-bind="css: {active: fields()['Email']}, attr: {'data-error': errors()['Email']}">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="sign-up-form_field_1" data-bind="value: fields()['Name'], css: {invalid: errors()['Name']}" type="text" class="validate">
+                      <label for="sign-up-form_field_1" data-bind="css: {active: fields()['Name']}, attr: {'data-error': errors()['Name']}">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="sign-up-form_field_2" data-bind="value: fields()['Password'], css: {invalid: errors()['Password']}" type="text" class="validate">
+                      <label for="sign-up-form_field_2" data-bind="css: {active: fields()['Password']}, attr: {'data-error': errors()['Password']}">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="sign-up-form_field_3" data-bind="value: fields()['Surname'], css: {invalid: errors()['Surname']}" type="text" class="validate">
+                      <label for="sign-up-form_field_3" data-bind="css: {active: fields()['Surname']}, attr: {'data-error': errors()['Surname']}">Surname</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input id="sign-up-form_field_4" data-bind="value: fields()['Username'], css: {invalid: errors()['Username']}" type="text" class="validate">
+                      <label for="sign-up-form_field_4" data-bind="css: {active: fields()['Username']}, attr: {'data-error': errors()['Username']}">Username</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card-action">
+        <a class="waves-effect waves-light btn cyan" data-bind="click: trigger.bind($data, 'log-in-sign-up-event')">Log In</a>
+        <a class="waves-effect waves-light btn cyan" data-bind="click: trigger.bind($data, 'registration-event')">Registration</a>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<ul class="tabs" style="overflow: hidden">
+        <div class="indicator cyan" style="z-index:1"></div>
+</ul>
+<!-- ko if: active() === 'welcome-to-user-view-container' -->
+    <!-- Welcome to User -->
+    <c-welcome-to-user-view-container params="context: context"></c-welcome-to-user-view-container>
+<!-- /ko -->
+<!-- ko if: active() === 'log-in-form-view-container' -->
+    <!-- log in container -->
+    <c-log-in-form-view-container params="context: context"></c-log-in-form-view-container>
+<!-- /ko -->
