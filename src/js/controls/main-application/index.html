@@ -1,28 +1,17 @@
-<ul class="side-nav" id="landmarks">
-</ul>
-<div class="navbar-fixed">
-    <nav class="green darken-1">
-        <div class="nav-wrapper">
-            <a href="#" data-activates="landmarks" class="button-collapse"><i class="material-icons tiny">menu</i></a>
-        </div>
-    </nav>
-</div>
-<div class="container">
-    <div class="row">
-        <span data-bind="if: active() === 'sign-up-view-container'">
-            <c-sign-up-view-container params="context: context" class="container"></c-sign-up-view-container>
-        </span>
-        <span data-bind="if: active() === 'log-in-external-view-container'">
-            <c-log-in-external-view-container params="context: context" class="container"></c-log-in-external-view-container>
-        </span>
-        <span data-bind="if: active() === 'compute-view-container'">
-            <c-compute-view-container params="context: context" class="container"></c-compute-view-container>
-        </span>
-        <span data-bind="if: active() === 'cost-view-container'">
-            <c-cost-view-container params="context: context" class="container"></c-cost-view-container>
-        </span>
-        <span data-bind="if: active() === 'your-devices-view-container'">
-            <c-your-devices-view-container params="context: context" class="container"></c-your-devices-view-container>
-        </span>
-    </div>
+<div>
+    <span data-bind="if: active() === 'sign-up-view-container'">
+        <c-sign-up-view-container params="context: context" class="container"></c-sign-up-view-container>
+    </span>
+    <span data-bind="if: active() === 'log-in-external-view-container'">
+        <c-log-in-external-view-container params="context: context" class="container"></c-log-in-external-view-container>
+    </span>
+    <span data-bind="if: active() === 'compute-view-container'">
+        <c-compute-view-container params="context: context" class="container"></c-compute-view-container>
+    </span>
+    <span data-bind="if: active() === 'cost-view-container'">
+        <c-cost-view-container params="context: context" class="container"></c-cost-view-container>
+    </span>
+    <span data-bind="if: active() === 'your-devices-view-container'">
+        <c-your-devices-view-container params="context: context" class="container"></c-your-devices-view-container>
+    </span>
 </div>
