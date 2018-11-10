@@ -51,6 +51,8 @@ ViewModel.prototype._compute = function() {
     var self = this;
     this._computing = this._repository.findById(this.filters.id, this.fields).then(function (item) {
         self.output = item;
+        item['cost per annum'] = localStorage.getItem('cost-year');
+        item['cost per day'] = localStorage.getItem('cost-day');
         self.item(item);
         self.status('computed');
         self._computing = undefined;

@@ -3,13 +3,15 @@
 
 var Promise = require('bluebird');
 
-function Action() { // add "options" parameters if needed
+function Action(options) { // add "options" parameters if needed
     // TODO: Global Initialization
     /*
     example:
     this.collection = options.repositories.mail;
     */
+    this.collection = options.repositories.devices;
 }
+
 Action.prototype.run = function (parameters, solve) { // add "onCancel" parameters if needed
     // Parameters:
     // parameters['usage']
@@ -21,16 +23,20 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    Materialize.toast('Compute', 2000)
+
+    localStorage.setItem('cost-day', 0);
+    localStorage.setItem('cost-week', 0);
+    localStorage.setItem('cost-year', 0);
+  
     solve({
         event: 'computation-done-event', // Done
         // event: 'computation-fail-event', // Fail
         data: {
-            'cost-per-annum': '0',
-            'cost-per-day': '0',
-            'model': '0',
+            'model': localStorage.getItem('model'),
         }
     });
+
+
     // THIS CAN BE REMOVED (END)
 };
 
